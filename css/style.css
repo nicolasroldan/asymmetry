@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  background: white;
+  padding: 10px 70px 25px 70px;
+  box-shadow: 0px 2px 7px 5px rgba(50, 50, 50, 0.09); }
+  header h3 {
+    display: inline-block; }
+  header h3 a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Droid Sans";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 21px;
+    padding-top: 7px;
+    color: black; }
+  header h3 a:after {
+    content: ".";
+    color: #FF4D32;
+    font-size: 24px;
+    margin-left: 5px; }
+  header nav {
+    float: right;
+    padding-top: 2px; }
+    header nav li {
+      display: inline-block;
+      margin: 10px; }
+      header nav li a {
+        font-family: "Droid Sans";
+        color: #6d6b6b;
+        text-decoration: none;
+        transition: 0.3s; }
+      header nav li a:hover {
+        color: #FF4D32; }
+      header nav li a:focus {
+        color: #FF4D32; }
+
+/*cierra header*/
+div.imagen {
+  background: url(../imagenes/background.jpg);
+  background-size: cover;
+  padding: 249px 0 249px 0;
+  max-width: 1280px;
+  margin: auto;
+  text-align: center; }
+  div.imagen h2 {
+    font-size: 65px;
+    color: white;
+    font-family: "Droid Sans";
+    position: relative; }
+  div.imagen input {
+    font-family: "Droid Sans";
+    background: #FF4D32;
+    color: white;
+    width: 25%;
+    border-radius: 5px;
+    border: 1px solid #FF4D32;
+    font-size: 23px;
+    position: relative;
+    margin-top: 20px;
+    padding: 17px 0; }
+
+/*cierra section.imagen*/
+.section-2 {
+  margin-top: 80px; }
+  .section-2 div.services {
+    width: 40%;
+    padding-bottom: 50px;
+    margin-left: 30px; }
+    .section-2 div.services h3 {
+      font-family: "Droid Sans";
+      font-size: 30px;
+      margin: 30px 0; }
+    .section-2 div.services h3:after {
+      content: "";
+      background: #FF4D32;
+      width: 15%;
+      height: 2px;
+      display: block;
+      position: relative;
+      top: 9px; }
+    .section-2 div.services p {
+      font-family: "Droid Sans"; }
+  .section-2 div.cajas {
+    text-align: left;
+    font-family: 'Droid Sans';
+    width: 41%;
+    display: inline-block;
+    margin: 0 15px 0 85px; }
+    .section-2 div.cajas article {
+      padding-bottom: 30px; }
+      .section-2 div.cajas article h4 {
+        color: #FF4D32;
+        font-family: 'Droid Sans';
+        font-size: 21px;
+        margin-bottom: 20px; }
+      .section-2 div.cajas article p {
+        font-family: "Droid Sans";
+        color: #777777;
+        font-size: 15px; }
+
+.portfolio {
+  max-width: 1200px;
+  margin: auto; }
+  .portfolio div.centrar {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 60px; }
+  .portfolio h3 {
+    font-family: "Droid Sans";
+    font-size: 30px;
+    margin: 30px 0; }
+  .portfolio h3:after {
+    content: "";
+    background: #FF4D32;
+    width: 5%;
+    height: 2px;
+    display: block;
+    margin: 12px auto; }
+  .portfolio p {
+    width: 47%;
+    margin: auto;
+    font-family: "Droid Sans"; }
+  .portfolio .imagenes {
+    width: 100%;
+    text-align: center; }
+  .portfolio .efecto {
+    width: 31%;
+    display: inline-block;
+    margin: 0 20px 20px 0px;
+    position: relative; }
+  .portfolio img {
+    width: 100%;
+    border-radius: 5px; }
+  .portfolio .ion-ios-plus-empty {
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 28%;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 1s;
+    bottom: 3px; }
+  .portfolio .ion-ios-plus-empty:hover {
+    opacity: 0.5;
+    background: #FF4D32; }
+
+/*# sourceMappingURL=style.css.map */

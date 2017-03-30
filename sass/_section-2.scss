@@ -1,0 +1,48 @@
+.section-2{
+	margin-top: 80px;
+
+	div.services{
+		width: 40%;
+		padding-bottom: 50px;
+		margin-left: 30px;
+
+		h3{
+			font-family: $fuentePrincipal;
+			font-size: 30px;
+			margin: 30px 0;
+		}
+
+		h3:after{
+			content: "";
+    		background: #FF4D32;
+    		width: 15%;
+    		height: 2px;
+    		display: block;
+    		position: relative;
+    		top: 9px;
+		}
+
+		p{
+			font-family: $fuentePrincipal;
+		}
+	}
+	div.cajas{
+		@include caja;
+		article{
+			@include articulo;
+
+
+			h4{
+				@include titulos;
+			}
+
+			p{
+				font-family: $fuentePrincipal;
+				color: #777777;
+				font-size: 15px;
+			}
+
+		}
+
+	}
+}
